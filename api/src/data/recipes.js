@@ -9,6 +9,7 @@ export const recipes = [
     servings: 4,
     prepTimeMinutes: 15,
     cookTimeMinutes: 20,
+    totalTimeMinutes: 35,
     tags: ['pasta', 'vegetariano', 'rapido'],
     ingredients: [
       { name: 'Pasta espagueti', quantity: 400, unit: 'g' },
@@ -39,7 +40,7 @@ export const recipes = [
       fiber: 6,
       sugar: 9
     },
-    imageUrl: 'https://images.cookingmama.dev/recipes/espagueti-pomodoro.jpg',
+    imageUrl: 'https://images.unsplash.com/photo-1504674900247-0877df9cc836',
     source: 'Recetario de la Nonna'
   },
   {
@@ -52,6 +53,7 @@ export const recipes = [
     servings: 4,
     prepTimeMinutes: 20,
     cookTimeMinutes: 25,
+    totalTimeMinutes: 45,
     tags: ['pollo', 'horneado', 'sin-gluten'],
     ingredients: [
       { name: 'Pechuga de pollo', quantity: 4, unit: 'unidad' },
@@ -82,7 +84,7 @@ export const recipes = [
       fiber: 1,
       sugar: 1
     },
-    imageUrl: 'https://images.cookingmama.dev/recipes/pollo-limon-ajo.jpg',
+    imageUrl: 'https://images.unsplash.com/photo-1604908176997-125f25cc6f3d',
     source: 'Cuaderno familiar'
   },
   {
@@ -95,6 +97,7 @@ export const recipes = [
     servings: 6,
     prepTimeMinutes: 15,
     cookTimeMinutes: 35,
+    totalTimeMinutes: 50,
     tags: ['sopa', 'legumbres', 'comfort-food'],
     ingredients: [
       { name: 'Aceite de oliva virgen extra', quantity: 2, unit: 'cda' },
@@ -127,7 +130,7 @@ export const recipes = [
       fiber: 7,
       sugar: 9
     },
-    imageUrl: 'https://images.cookingmama.dev/recipes/sopa-verduras-garbanzos.jpg',
+    imageUrl: 'https://images.unsplash.com/photo-1547592166-23ac45744acd',
     source: 'Blog Cocina de Mercado'
   },
   {
@@ -140,6 +143,7 @@ export const recipes = [
     servings: 5,
     prepTimeMinutes: 20,
     cookTimeMinutes: 35,
+    totalTimeMinutes: 55,
     tags: ['arroz', 'mariscos', 'mediterranea'],
     ingredients: [
       { name: 'Aceite de oliva virgen extra', quantity: 3, unit: 'cda' },
@@ -173,7 +177,7 @@ export const recipes = [
       fiber: 5,
       sugar: 6
     },
-    imageUrl: 'https://images.cookingmama.dev/recipes/paella-mediterranea.jpg',
+    imageUrl: 'https://images.unsplash.com/photo-1534080564583-6be75777b70a',
     source: 'Recetario de la familia Costa'
   },
   {
@@ -186,6 +190,7 @@ export const recipes = [
     servings: 3,
     prepTimeMinutes: 15,
     cookTimeMinutes: 12,
+    totalTimeMinutes: 27,
     tags: ['wok', 'rapido', 'alto-proteina'],
     ingredients: [
       { name: 'Pechuga de pollo', quantity: 2, unit: 'unidad', notes: 'en tiras finas' },
@@ -219,7 +224,7 @@ export const recipes = [
       fiber: 4,
       sugar: 7
     },
-    imageUrl: 'https://images.cookingmama.dev/recipes/salteado-oriental-pollo.jpg',
+    imageUrl: 'https://images.unsplash.com/photo-1525755662778-989d0524087e',
     source: 'Street Food Notes'
   },
   {
@@ -232,6 +237,7 @@ export const recipes = [
     servings: 4,
     prepTimeMinutes: 15,
     cookTimeMinutes: 20,
+    totalTimeMinutes: 35,
     tags: ['ensalada', 'superfoods', 'vegano'],
     ingredients: [
       { name: 'Quinua', quantity: 250, unit: 'g' },
@@ -263,7 +269,7 @@ export const recipes = [
       fiber: 6,
       sugar: 5
     },
-    imageUrl: 'https://images.cookingmama.dev/recipes/ensalada-quinua-espinacas.jpg',
+    imageUrl: 'https://images.unsplash.com/photo-1490645935967-10de6ba17061',
     source: 'Revista Comer Sano'
   },
   {
@@ -276,6 +282,7 @@ export const recipes = [
     servings: 4,
     prepTimeMinutes: 10,
     cookTimeMinutes: 25,
+    totalTimeMinutes: 35,
     tags: ['vegano', 'picante-suave', 'legumbres'],
     ingredients: [
       { name: 'Aceite de oliva virgen extra', quantity: 2, unit: 'cda' },
@@ -310,7 +317,7 @@ export const recipes = [
       fiber: 9,
       sugar: 9
     },
-    imageUrl: 'https://images.cookingmama.dev/recipes/curry-garbanzos.jpg',
+    imageUrl: 'https://images.unsplash.com/photo-1546069901-ba9599a7e63c',
     source: 'Recetas sin prisa'
   },
   {
@@ -323,6 +330,7 @@ export const recipes = [
     servings: 4,
     prepTimeMinutes: 15,
     cookTimeMinutes: 30,
+    totalTimeMinutes: 45,
     tags: ['sopa', 'vegetariano', 'cremoso'],
     ingredients: [
       { name: 'Mantequilla', quantity: 40, unit: 'g' },
@@ -355,7 +363,7 @@ export const recipes = [
       fiber: 3,
       sugar: 8
     },
-    imageUrl: 'https://images.cookingmama.dev/recipes/crema-champinones.jpg',
+    imageUrl: 'https://images.unsplash.com/photo-1543362906-acfc16c67564',
     source: 'Gastronomia Urbana'
   },
   {
@@ -368,6 +376,7 @@ export const recipes = [
     servings: 3,
     prepTimeMinutes: 10,
     cookTimeMinutes: 15,
+    totalTimeMinutes: 25,
     tags: ['desayuno', 'dulce', 'sin-refinados'],
     ingredients: [
       { name: 'Banana', quantity: 2, unit: 'unidad', notes: 'maduras' },
@@ -398,7 +407,7 @@ export const recipes = [
       fiber: 3,
       sugar: 18
     },
-    imageUrl: 'https://images.cookingmama.dev/recipes/tortitas-banana-miel.jpg',
+    imageUrl: 'https://images.unsplash.com/photo-1525755662778-989d0524087e',
     source: 'Brunch Lovers'
   },
   {
@@ -411,6 +420,7 @@ export const recipes = [
     servings: 24,
     prepTimeMinutes: 15,
     cookTimeMinutes: 12,
+    totalTimeMinutes: 27,
     tags: ['postre', 'chocolate', 'horneado'],
     ingredients: [
       { name: 'Harina de trigo', quantity: 220, unit: 'g' },
@@ -439,7 +449,7 @@ export const recipes = [
       fiber: 1,
       sugar: 12
     },
-    imageUrl: 'https://images.cookingmama.dev/recipes/galletas-chocolate.jpg',
+    imageUrl: 'https://images.unsplash.com/photo-1600891964599-f61ba0e24092',
     source: 'Sweet Tooth Magazine'
   },
   {
@@ -452,6 +462,7 @@ export const recipes = [
     servings: 4,
     prepTimeMinutes: 10,
     cookTimeMinutes: 0,
+    totalTimeMinutes: 10,
     tags: ['ensalada', 'vegetariano', 'sin-coccion'],
     ingredients: [
       { name: 'Espinaca fresca', quantity: 120, unit: 'g' },
@@ -481,7 +492,7 @@ export const recipes = [
       fiber: 3,
       sugar: 5
     },
-    imageUrl: 'https://images.cookingmama.dev/recipes/ensalada-verde-caprese.jpg',
+    imageUrl: 'https://images.unsplash.com/photo-1525755662778-989d0524087e',
     source: 'Cocina Ligera'
   },
   {
@@ -494,6 +505,7 @@ export const recipes = [
     servings: 6,
     prepTimeMinutes: 15,
     cookTimeMinutes: 35,
+    totalTimeMinutes: 50,
     tags: ['sopa', 'pollo', 'comfort-food'],
     ingredients: [
       { name: 'Caldo de pollo', quantity: 1.5, unit: 'l' },
@@ -527,8 +539,7 @@ export const recipes = [
       fiber: 3,
       sugar: 6
     },
-    imageUrl: 'https://images.cookingmama.dev/recipes/caldo-pollo-verduras.jpg',
+    imageUrl: 'https://images.unsplash.com/photo-1547592166-23ac45744acd',
     source: 'Recetas de la abuela'
   }
 ];
-

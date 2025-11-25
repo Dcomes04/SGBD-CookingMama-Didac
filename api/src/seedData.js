@@ -91,11 +91,38 @@ const seed = async () => {
     const recipeDocs = await Recipe.insertMany(recipePayload, { ordered: true });
     console.log(`   → ${recipeDocs.length} recetas insertadas.`);
 
-    console.log('🧾 Sincronizando indices...');
-    await Promise.all([
-      Ingredient.syncIndexes(),
-      Recipe.syncIndexes()
-    ]);
+    console.log('🧾 Indexando recetas en Elasticsearch...');
+    const operations = recipeDocs.flatMap(doc => {
+      const plainDoc = doc.toObject();
+      const id = plainDoc._id.toString();
+      delete plainDoc._id;
+      delete plainDoc.__v;
+      return [
+        { index: { _index: 'recipes', _id: id } },
+        plainDoc
+      ];
+    });
+
+    if (operations.length > 0) {
+      const bulkResponse = await es.bulk({ refresh: true, operations });
+      if (bulkResponse.errors) {
+        const erroredDocuments = [];
+        bulkResponse.items.forEach((action, i) => {
+          const operation = Object.keys(action)[0];
+          if (action[operation].error) {
+            erroredDocuments.push({
+              status: action[operation].status,
+              error: action[operation].error,
+              operation: operations[i * 2],
+              document: operations[i * 2 + 1]
+            });
+          }
+        });
+        console.error('❌ Errores en bulk insert de ES:', JSON.stringify(erroredDocuments, null, 2));
+      } else {
+        console.log(`   ✅ ${recipeDocs.length} recetas indexadas en Elasticsearch.`);
+      }
+    }
 
     console.log('🔄 Refrescando índices de Elasticsearch...');
     await es.indices.refresh({ index: ['ingredients', 'recipes'] });
@@ -112,4 +139,3 @@ const seed = async () => {
 };
 
 seed();
-
