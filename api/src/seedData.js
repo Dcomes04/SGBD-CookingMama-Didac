@@ -85,7 +85,13 @@ const seed = async () => {
     console.log(`   → ${ingredientDocs.length} ingredientes insertados.`);
 
     console.log('🍽️ Preparando recetas con referencias de ingredientes...');
-    const recipePayload = prepareRecipes(ingredientDocs);
+    let recipePayload;
+    try {
+      recipePayload = prepareRecipes(ingredientDocs);
+    } catch (err) {
+      console.error('❌ Error en prepareRecipes:', err);
+      throw err;
+    }
 
     console.log('📚 Insertando recetas...');
     const recipeDocs = await Recipe.insertMany(recipePayload, { ordered: true });

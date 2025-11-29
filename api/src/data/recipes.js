@@ -40,7 +40,7 @@ export const recipes = [
       fiber: 6,
       sugar: 9
     },
-    imageUrl: 'https://images.unsplash.com/photo-1504674900247-0877df9cc836',
+    imageUrl: 'https://media.istockphoto.com/id/155433188/es/foto/spaghetti-tomate-y-albahaca.jpg?s=612x612&w=0&k=20&c=Vrs52xXuylrmefz6wBHknFupab3wjyJ7k16JsI9I7tw=',
     source: 'Recetario de la Nonna'
   },
   {
@@ -84,7 +84,7 @@ export const recipes = [
       fiber: 1,
       sugar: 1
     },
-    imageUrl: 'https://images.unsplash.com/photo-1604908176997-125f25cc6f3d',
+    imageUrl: 'https://cloudfront-us-east-1.images.arcpublishing.com/infobae/6LCRFKNE5FCSJILCS2B23R2Q5E.jpeg',
     source: 'Cuaderno familiar'
   },
   {
@@ -130,7 +130,7 @@ export const recipes = [
       fiber: 7,
       sugar: 9
     },
-    imageUrl: 'https://images.unsplash.com/photo-1547592166-23ac45744acd',
+    imageUrl: 'https://www.goya.com/wp-content/uploads/2023/10/winter-vegetable-and-chick-pea-soup.jpg',
     source: 'Blog Cocina de Mercado'
   },
   {
@@ -177,7 +177,7 @@ export const recipes = [
       fiber: 5,
       sugar: 6
     },
-    imageUrl: 'https://images.unsplash.com/photo-1534080564583-6be75777b70a',
+    imageUrl: 'https://colonogourmet.com/cdn/shop/articles/Paella_de_chorizo_y_langostinos_1280x.jpg?v=1648046239',
     source: 'Recetario de la familia Costa'
   },
   {
@@ -224,7 +224,7 @@ export const recipes = [
       fiber: 4,
       sugar: 7
     },
-    imageUrl: 'https://images.unsplash.com/photo-1525755662778-989d0524087e',
+    imageUrl: 'https://www.publico.es/files/image_horizontal_mobile/uploads/2024/11/19/673cf40ed5790.jpeg',
     source: 'Street Food Notes'
   },
   {
@@ -269,7 +269,7 @@ export const recipes = [
       fiber: 6,
       sugar: 5
     },
-    imageUrl: 'https://images.unsplash.com/photo-1490645935967-10de6ba17061',
+    imageUrl: 'https://chefeel.com/chefgeneralfiles/2023/03/ensaladas-quinua-rucula-rabano-tomate-pepino-recipiente-mesa-madera-comida-sana-dieta-desintoxicacion-concepto-vegetariano-880x587.jpg',
     source: 'Revista Comer Sano'
   },
   {
@@ -317,7 +317,7 @@ export const recipes = [
       fiber: 9,
       sugar: 9
     },
-    imageUrl: 'https://images.unsplash.com/photo-1546069901-ba9599a7e63c',
+    imageUrl: 'https://www.divinavinagreta.es/wp-content/uploads/2021/04/garbanzos-tomate-chana-masala-1.jpg',
     source: 'Recetas sin prisa'
   },
   {
@@ -363,7 +363,7 @@ export const recipes = [
       fiber: 3,
       sugar: 8
     },
-    imageUrl: 'https://images.unsplash.com/photo-1543362906-acfc16c67564',
+    imageUrl: 'https://www.hazteveg.com/img/recipes/full/202212/R01-75558.jpg',
     source: 'Gastronomia Urbana'
   },
   {
@@ -407,7 +407,7 @@ export const recipes = [
       fiber: 3,
       sugar: 18
     },
-    imageUrl: 'https://images.unsplash.com/photo-1525755662778-989d0524087e',
+    imageUrl: 'https://www.infobae.com/new-resizer/IzQ4_LC6fWZnm55PrX6wZCLTpbI=/arc-anglerfish-arc2-prod-infobae/public/62DQR4CRIFBP5HHVZLJTTBYPX4.jpg',
     source: 'Brunch Lovers'
   },
   {
@@ -449,7 +449,7 @@ export const recipes = [
       fiber: 1,
       sugar: 12
     },
-    imageUrl: 'https://images.unsplash.com/photo-1600891964599-f61ba0e24092',
+    imageUrl: 'https://images.aws.nestle.recipes/resized/2024_10_28T11_07_30_badun_images.badun.es_galletas_crujientes_de_chocolate_y_frutos_secos_1290_742.jpg',
     source: 'Sweet Tooth Magazine'
   },
   {
@@ -492,7 +492,7 @@ export const recipes = [
       fiber: 3,
       sugar: 5
     },
-    imageUrl: 'https://images.unsplash.com/photo-1525755662778-989d0524087e',
+    imageUrl: 'https://deliciaskitchen.b-cdn.net/wp-content/uploads/2022/07/ensalada-caprese-receta-original-italiana.jpg',
     source: 'Cocina Ligera'
   },
   {
@@ -539,7 +539,384 @@ export const recipes = [
       fiber: 3,
       sugar: 6
     },
-    imageUrl: 'https://images.unsplash.com/photo-1547592166-23ac45744acd',
+    imageUrl: 'https://www.pequerecetas.com/wp-content/uploads/2023/10/como-hacer-sopa-de-pollo-receta-facil.jpeg',
     source: 'Recetas de la abuela'
+  },
+  {
+    title: 'Lasagna Bolognese',
+    slug: 'lasagna-bolognese',
+    description: 'Una lasaña tradicional con salsa boloñesa, queso ricotta y mucho queso mozzarella.',
+    cuisine: 'Italiana',
+    course: 'Principal',
+    difficulty: 'medium',
+    servings: 6,
+    prepTimeMinutes: 30,
+    cookTimeMinutes: 60,
+    totalTimeMinutes: 90,
+    tags: ['pasta', 'carne', 'horneado'],
+    ingredients: [
+      { name: 'Láminas de lasaña', quantity: 12, unit: 'unidad' },
+      { name: 'Carne molida de res', quantity: 500, unit: 'g' },
+      { name: 'Cebolla', quantity: 1, unit: 'unidad', notes: 'picada' },
+      { name: 'Ajo', quantity: 3, unit: 'diente', notes: 'picado' },
+      { name: 'Tomate triturado', quantity: 800, unit: 'g' },
+      { name: 'Puré de tomate', quantity: 200, unit: 'g' },
+      { name: 'Vino tinto', quantity: 100, unit: 'ml' },
+      { name: 'Aceite de oliva virgen extra', quantity: 2, unit: 'cda' },
+      { name: 'Queso ricotta', quantity: 250, unit: 'g' },
+      { name: 'Queso mozzarella', quantity: 200, unit: 'g', notes: 'rallado' },
+      { name: 'Queso parmesano', quantity: 50, unit: 'g', notes: 'rallado' },
+      { name: 'Sal marina', quantity: 1, unit: 'cdita' },
+      { name: 'Pimienta negra molida', quantity: 0.5, unit: 'cdita' },
+      { name: 'Hojas de albahaca', quantity: 8, unit: 'hoja' }
+    ],
+    instructions: [
+      'Precalentar el horno a 180 °C.',
+      'En una sartén grande, calienta el aceite y sofríe la cebolla y el ajo hasta que estén dorados.',
+      'Añadir la carne molida, cocinar hasta dorarse, agregar el vino tinto y dejar reducir.',
+      'Agregar el tomate triturado, puré de tomate, sal, pimienta y cocinar a fuego lento durante 30 minutos.',
+      'En una fuente para horno, colocar una capa de salsa, luego láminas de lasaña, una capa de salsa, ricotta, mozzarella y parmesano. Repetir hasta llenar la fuente.',
+      'Cubrir con papel aluminio y hornear durante 45 minutos. Retirar el papel y hornear por 15 minutos más hasta que el queso esté dorado.'
+    ],
+    tips: [
+      'Puedes agregar un poco de bechamel para una textura más cremosa.',
+      'Deja reposar la lasaña durante 10 minutos antes de servir para que sea más fácil cortar.'
+    ],
+    nutrition: {
+      calories: 650,
+      protein: 40,
+      carbs: 50,
+      fat: 30,
+      fiber: 4,
+      sugar: 8
+    },
+    imageUrl: 'https://www.aiafood.com/_next/image/?url=https%3A%2F%2Fbackoffice.aiafood.com%2Fuploads%2Fxxl_lasagne_alla_bolognese_la_ricetta_originale_6703a8fdd2.webp&w=1920&q=80',
+    source: 'Recetas Caseras'
+  },
+  {
+    title: 'Risotto de Setas',
+    slug: 'risotto-setas',
+    description: 'Un risotto cremoso con setas frescas, queso parmesano y un toque de vino blanco.',
+    cuisine: 'Italiana',
+    course: 'Principal',
+    difficulty: 'medium',
+    servings: 4,
+    prepTimeMinutes: 15,
+    cookTimeMinutes: 35,
+    totalTimeMinutes: 50,
+    tags: ['arroz', 'setas', 'cremoso'],
+    ingredients: [
+      { name: 'Arroz Arborio', quantity: 300, unit: 'g' },
+      { name: 'Champinones', quantity: 300, unit: 'g' },
+      { name: 'Caldo de pollo', quantity: 1.5, unit: 'l' },
+      { name: 'Vino blanco', quantity: 100, unit: 'ml' },
+      { name: 'Cebolla', quantity: 1, unit: 'unidad', notes: 'picada' },
+      { name: 'Ajo', quantity: 2, unit: 'diente', notes: 'picado' },
+      { name: 'Queso parmesano', quantity: 50, unit: 'g', notes: 'rallado' },
+      { name: 'Mantequilla', quantity: 30, unit: 'g' },
+      { name: 'Aceite de oliva virgen extra', quantity: 1, unit: 'cda' },
+      { name: 'Sal marina', quantity: 1, unit: 'cdita' },
+      { name: 'Pimienta negra molida', quantity: 0.5, unit: 'cdita' }
+    ],
+    instructions: [
+      'En una sartén grande, calienta el aceite y sofríe la cebolla y el ajo hasta que estén dorados.',
+      'Agrega las setas y cocina hasta que se ablanden.',
+      'Añadir el arroz Arborio y cocinar por 2 minutos.',
+      'Agregar el vino blanco y dejar que se evapore.',
+      'Incorporar el caldo de pollo caliente poco a poco, revolviendo constantemente hasta que el arroz esté cocido (aproximadamente 18 minutos).',
+      'Añadir la mantequilla y el queso parmesano al final para obtener un risotto cremoso. Salpimentar al gusto.'
+    ],
+    tips: [
+      'Usa caldo de pollo casero para un mejor sabor.',
+      'Si te gusta un risotto más cremoso, puedes añadir más mantequilla y queso al final.'
+    ],
+    nutrition: {
+      calories: 550,
+      protein: 12,
+      carbs: 80,
+      fat: 20,
+      fiber: 5,
+      sugar: 5
+    },
+    imageUrl: 'https://www.sherry.wine/media/images/shutterstock_362075504.width-876.jpg',
+    source: 'Cocina Italiana'
+  },
+  {
+    title: 'Fettuccine Alfredo',
+    slug: 'fettuccine-alfredo',
+    description: 'Pasta fettuccine con una salsa cremosa de queso parmesano y mantequilla.',
+    cuisine: 'Italiana',
+    course: 'Principal',
+    difficulty: 'easy',
+    servings: 4,
+    prepTimeMinutes: 10,
+    cookTimeMinutes: 20,
+    totalTimeMinutes: 30,
+    tags: ['pasta', 'cremoso', 'queso'],
+    ingredients: [
+      { name: 'Fettuccine', quantity: 400, unit: 'g' },
+      { name: 'Mantequilla', quantity: 50, unit: 'g' },
+      { name: 'Crema de leche', quantity: 200, unit: 'ml' },
+      { name: 'Queso parmesano', quantity: 100, unit: 'g', notes: 'rallado' },
+      { name: 'Ajo', quantity: 2, unit: 'diente', notes: 'picado' },
+      { name: 'Sal marina', quantity: 1, unit: 'cdita' },
+      { name: 'Pimienta negra molida', quantity: 0.5, unit: 'cdita' },
+      { name: 'Aceite de oliva virgen extra', quantity: 1, unit: 'cda' }
+    ],
+    instructions: [
+      'Cocer la pasta en agua con sal hasta que esté al dente.',
+      'Mientras tanto, en una sartén grande, derretir la mantequilla con el aceite de oliva a fuego medio.',
+      'Añadir el ajo y cocinar por 1-2 minutos.',
+      'Agregar la crema de leche y calentar hasta que empiece a hervir.',
+      'Incorporar el queso parmesano y mezclar hasta que la salsa se vuelva cremosa.',
+      'Mezclar la pasta escurrida con la salsa y servir con más queso parmesano.'
+    ],
+    tips: [
+      'Puedes añadir pollo o camarones para una versión más completa.',
+      'Sirve inmediatamente para disfrutar la textura cremosa.'
+    ],
+    nutrition: {
+      calories: 700,
+      protein: 20,
+      carbs: 75,
+      fat: 35,
+      fiber: 3,
+      sugar: 5
+    },
+    imageUrl: 'https://i0.wp.com/cremigal.com/wp-content/uploads/2020/06/pasta_con_salsa_alfredo.jpg?fit=806%2C453&ssl=1',
+    source: 'Cocina Tradicional Italiana'
+  },
+  {
+    title: 'Gnocchi con Salsa de Tomate y Albahaca',
+    slug: 'gnocchi-tomate-albahaca',
+    description: 'Gnocchis caseros en una salsa fresca de tomate y albahaca, ideal para un plato reconfortante.',
+    cuisine: 'Italiana',
+    course: 'Principal',
+    difficulty: 'medium',
+    servings: 4,
+    prepTimeMinutes: 20,
+    cookTimeMinutes: 25,
+    totalTimeMinutes: 45,
+    tags: ['pasta', 'vegetariano', 'tomate'],
+    ingredients: [
+      { name: 'Gnocchi de patata', quantity: 500, unit: 'g' },
+      { name: 'Tomate', quantity: 6, unit: 'unidad', notes: 'pelados y picados' },
+      { name: 'Ajo', quantity: 2, unit: 'diente' },
+      { name: 'Aceite de oliva virgen extra', quantity: 2, unit: 'cda' },
+      { name: 'Albahaca fresca', quantity: 10, unit: 'hoja' },
+      { name: 'Queso parmesano', quantity: 50, unit: 'g', notes: 'rallado' },
+      { name: 'Sal marina', quantity: 1, unit: 'cdita' },
+      { name: 'Pimienta negra molida', quantity: 0.5, unit: 'cdita' }
+    ],
+    instructions: [
+      'Cocer los gnocchis en agua con sal hasta que suban a la superficie.',
+      'Mientras tanto, calienta el aceite de oliva en una sartén, agrega el ajo picado y sofríe por 1-2 minutos.',
+      'Añadir los tomates picados y cocinar a fuego lento durante 15 minutos hasta obtener una salsa espesa.',
+      'Añadir albahaca fresca troceada, sal y pimienta.',
+      'Mezclar los gnocchis con la salsa y servir con queso parmesano rallado.'
+    ],
+    tips: [
+      'Si prefieres una salsa más cremosa, añade un poco de crema de leche al final.',
+      'Usa gnocchis caseros para un toque aún más auténtico.'
+    ],
+    nutrition: {
+      calories: 400,
+      protein: 12,
+      carbs: 60,
+      fat: 14,
+      fiber: 5,
+      sugar: 7
+    },
+    imageUrl: 'https://img-global.cpcdn.com/recipes/d0ccc4e176682cac/680x781cq80/gnocchi-de-patata-sin-gluten-con-salsa-de-tomate-y-albahaca-foto-principal.jpg',
+    source: 'Recetas Italianas'
+  },
+  {
+    title: 'Pizza Margherita con Masa Casera',
+    slug: 'pizza-margherita-casera',
+    description: 'Pizza clásica italiana con masa casera, salsa de tomate fresco, mozzarella y albahaca.',
+    cuisine: 'Italiana',
+    course: 'Principal',
+    difficulty: 'medium',
+    servings: 4,
+    prepTimeMinutes: 30,
+    cookTimeMinutes: 15,
+    totalTimeMinutes: 45,
+    tags: ['pizza', 'mozzarella', 'horneado'],
+    ingredients: [
+      { name: 'Harina de trigo', quantity: 500, unit: 'g' },
+      { name: 'Levadura fresca', quantity: 20, unit: 'g' },
+      { name: 'Agua tibia', quantity: 300, unit: 'ml' },
+      { name: 'Aceite de oliva virgen extra', quantity: 3, unit: 'cda' },
+      { name: 'Sal marina', quantity: 1, unit: 'cdita' },
+      { name: 'Tomate triturado', quantity: 300, unit: 'g' },
+      { name: 'Queso mozzarella', quantity: 200, unit: 'g', notes: 'en rodajas' },
+      { name: 'Albahaca fresca', quantity: 8, unit: 'hoja' },
+      { name: 'Queso parmesano', quantity: 30, unit: 'g', notes: 'rallado' }
+    ],
+    instructions: [
+      'Disolver la levadura en agua tibia, añadir la harina y la sal, y amasar hasta obtener una masa homogénea.',
+      'Dejar reposar la masa durante 1 hora hasta que haya duplicado su tamaño.',
+      'Mientras tanto, prepara la salsa calentando el tomate triturado con un poco de aceite de oliva y sal.',
+      'Precalienta el horno a 250 °C.',
+      'Estira la masa en una pizza, cubre con salsa de tomate, mozzarella y queso parmesano.',
+      'Hornea durante 15 minutos hasta que la masa esté dorada y crujiente.',
+      'Añadir albahaca fresca al salir del horno y servir.'
+    ],
+    tips: [
+      'Si no encuentras mozzarella fresca, puedes usar mozzarella rallada.',
+      'Deja que la masa repose para obtener una pizza más esponjosa.'
+    ],
+    nutrition: {
+      calories: 600,
+      protein: 20,
+      carbs: 80,
+      fat: 25,
+      fiber: 5,
+      sugar: 6
+    },
+    imageUrl: 'https://www.ditaly.es/wp-content/uploads/2023/03/pizza-margarita.png',
+    source: 'Recetas de Pizzas Caseras'
+  },
+  {
+    title: 'Spaghetti alla Puttanesca',
+    slug: 'spaghetti-alla-puttanesca',
+    description: 'Spaghetti con una salsa vibrante de tomate, aceitunas, alcaparras y anchoas.',
+    cuisine: 'Italiana',
+    course: 'Principal',
+    difficulty: 'easy',
+    servings: 4,
+    prepTimeMinutes: 10,
+    cookTimeMinutes: 15,
+    totalTimeMinutes: 25,
+    tags: ['pasta', 'salvaje', 'tomate'],
+    ingredients: [
+      { name: 'Spaghetti', quantity: 400, unit: 'g' },
+      { name: 'Tomates enlatados', quantity: 400, unit: 'g' },
+      { name: 'Aceitunas negras', quantity: 100, unit: 'g', notes: 'deshuesadas' },
+      { name: 'Alcaparras', quantity: 2, unit: 'cda' },
+      { name: 'Anchoas en aceite', quantity: 4, unit: 'filete' },
+      { name: 'Ajo', quantity: 3, unit: 'diente' },
+      { name: 'Aceite de oliva', quantity: 3, unit: 'cda' },
+      { name: 'Pimienta negra molida', quantity: 0.5, unit: 'cdita' },
+      { name: 'Perejil fresco', quantity: 10, unit: 'ramita', notes: 'picado' }
+    ],
+    instructions: [
+      'Cocer los spaghetti en agua con sal hasta que estén al dente.',
+      'Mientras tanto, calienta el aceite de oliva en una sartén grande, agrega el ajo picado y las anchoas, y sofríe durante 1 minuto.',
+      'Añadir las aceitunas, las alcaparras y los tomates. Cocinar a fuego medio durante 10 minutos.',
+      'Mezclar los spaghetti cocidos con la salsa y cocinar por 2 minutos.',
+      'Servir con perejil fresco picado por encima.'
+    ],
+    tips: [
+      'Puedes añadir guindilla si te gusta el picante.',
+      'Este plato es perfecto con un buen trozo de pan crujiente.'
+    ],
+    nutrition: {
+      calories: 450,
+      protein: 14,
+      carbs: 60,
+      fat: 18,
+      fiber: 7,
+      sugar: 8
+    },
+    imageUrl: 'https://www.dececco.com/wp-content/uploads/2025/04/foto-apertura.png',
+    source: 'Cucina Tradizionale'
+  },
+  {
+    title: 'Ratatouille',
+    slug: 'ratatouille',
+    description: 'Plato tradicional francés de verduras asadas con un toque de hierbas aromáticas.',
+    cuisine: 'Francesa',
+    course: 'Principal',
+    difficulty: 'medium',
+    servings: 4,
+    prepTimeMinutes: 20,
+    cookTimeMinutes: 40,
+    totalTimeMinutes: 60,
+    tags: ['vegetariano', 'francés', 'saludable'],
+    ingredients: [
+      { name: 'Berenjena', quantity: 1, unit: 'unidad', notes: 'en rodajas' },
+      { name: 'Calabacín', quantity: 1, unit: 'unidad', notes: 'en rodajas' },
+      { name: 'Pimiento rojo', quantity: 1, unit: 'unidad', notes: 'en tiras' },
+      { name: 'Pimiento amarillo', quantity: 1, unit: 'unidad', notes: 'en tiras' },
+      { name: 'Tomate', quantity: 3, unit: 'unidad', notes: 'en rodajas' },
+      { name: 'Ajo', quantity: 2, unit: 'diente', notes: 'picado' },
+      { name: 'Aceite de oliva virgen extra', quantity: 3, unit: 'cda' },
+      { name: 'Tomillo fresco', quantity: 2, unit: 'ramita' },
+      { name: 'Romero fresco', quantity: 1, unit: 'ramita' },
+      { name: 'Sal marina', quantity: 1, unit: 'cdita' },
+      { name: 'Pimienta negra molida', quantity: 0.5, unit: 'cdita' }
+    ],
+    instructions: [
+      'Precalienta el horno a 180 °C.',
+      'Corta las verduras en rodajas finas y colócalas de forma alternada en una fuente para horno.',
+      'En una sartén, calienta el aceite de oliva y sofríe el ajo picado durante 1-2 minutos.',
+      'Vierte el ajo y el aceite sobre las verduras. Añade el tomillo, romero, sal y pimienta.',
+      'Hornea durante 40 minutos o hasta que las verduras estén tiernas y ligeramente doradas.'
+    ],
+    tips: [
+      'Puedes añadir un poco de queso rallado al final de la cocción para un toque extra.',
+      'Este plato también puede servirse como acompañante o como plato principal con pan crujiente.'
+    ],
+    nutrition: {
+      calories: 180,
+      protein: 3,
+      carbs: 30,
+      fat: 8,
+      fiber: 6,
+      sugar: 10
+    },
+    imageUrl: 'https://static.bainet.es/clip/3954bd7e-9da5-4955-a666-244e9da550f0_source-aspect-ratio_1600w_0.jpg',
+    source: 'Recetas Francesas'
+  },
+  {
+    title: 'Paella Valenciana',
+    slug: 'paella-valenciana',
+    description: 'La auténtica paella de la región Valenciana, con mariscos, pollo y arroz en un solo plato.',
+    cuisine: 'Española',
+    course: 'Principal',
+    difficulty: 'medium',
+    servings: 6,
+    prepTimeMinutes: 30,
+    cookTimeMinutes: 45,
+    totalTimeMinutes: 75,
+    tags: ['arroz', 'mariscos', 'carne'],
+    ingredients: [
+      { name: 'Arroz de grano corto', quantity: 350, unit: 'g' },
+      { name: 'Pollo', quantity: 500, unit: 'g', notes: 'en trozos' },
+      { name: 'Mariscos surtidos', quantity: 300, unit: 'g' },
+      { name: 'Pimiento rojo', quantity: 1, unit: 'unidad', notes: 'en tiras' },
+      { name: 'Judía verde', quantity: 100, unit: 'g' },
+      { name: 'Tomate', quantity: 2, unit: 'unidad', notes: 'rallado' },
+      { name: 'Ajo', quantity: 3, unit: 'diente', notes: 'picado' },
+      { name: 'Aceite de oliva', quantity: 3, unit: 'cda' },
+      { name: 'Pimiento verde', quantity: 1, unit: 'unidad', notes: 'en tiras' },
+      { name: 'Caldo de pollo', quantity: 1.2, unit: 'l' },
+      { name: 'Azafrán', quantity: 1, unit: 'pizca' },
+      { name: 'Sal marina', quantity: 1, unit: 'cdita' },
+      { name: 'Pimienta negra molida', quantity: 0.5, unit: 'cdita' }
+    ],
+    instructions: [
+      'En una paellera, calienta el aceite de oliva y sofríe el pollo hasta dorarse.',
+      'Añade el pimiento rojo, verde, la judía verde y el ajo. Cocina durante 5 minutos.',
+      'Incorpora el tomate rallado y cocina durante 10 minutos hasta que el tomate se haya reducido.',
+      'Agrega el arroz y remueve bien para que se impregne de los sabores.',
+      'Añade el caldo de pollo caliente, el azafrán, la sal y la pimienta. Cocina durante 20 minutos sin remover.',
+      'Agrega los mariscos y cocina durante 10 minutos más. Deja reposar unos minutos antes de servir.'
+    ],
+    tips: [
+      'Puedes añadir almejas o mejillones para más sabor.',
+      'Asegúrate de usar un caldo de pollo casero para un sabor más profundo.'
+    ],
+    nutrition: {
+      calories: 550,
+      protein: 30,
+      carbs: 60,
+      fat: 18,
+      fiber: 4,
+      sugar: 7
+    },
+    imageUrl: 'https://chefstv.net/wp-content/uploads/2024/04/0178-paella-valenciana-chefstv-wide-web.webp',
+    source: 'Recetas de la Abuela'
   }
 ];
