@@ -259,6 +259,7 @@ app.get('/recipes', async (req, res) => {
     const {
       q,
       cuisine,
+      course,
       difficulty,
       tags,
       ingredient,
@@ -276,6 +277,10 @@ app.get('/recipes', async (req, res) => {
 
     if (cuisine) {
       filter.cuisine = new RegExp(`^${cuisine}$`, 'i');
+    }
+
+    if (course) {
+      filter.course = new RegExp(`^${course}$`, 'i');
     }
 
     const normalizedDifficulty = normalizeDifficulty(difficulty);
@@ -495,6 +500,7 @@ app.get(['/search/recipes', '/search'], async (req, res) => {
     const {
       q,
       cuisine,
+      course,
       difficulty,
       tags,
       ingredients,
@@ -504,11 +510,13 @@ app.get(['/search/recipes', '/search'], async (req, res) => {
       refresh
     } = req.query;
 
+    // Debug: Log all query parameters
+    console.log('🔍 All req.query:', JSON.stringify(req.query, null, 2));
+    console.log('🔍 Extracted params:', { q, ingredients, cuisine, course, difficulty, tags });
+    
     import('fs').then(fs => {
-      fs.appendFileSync('debug_req.log', `Params: ${JSON.stringify({ q, ingredients, cuisine })}\n`);
+      fs.appendFileSync('debug_req.log', `Params: ${JSON.stringify({ q, ingredients, cuisine, course })}\n`);
     });
-
-    console.log('🔍 Search Params:', { q, ingredients, cuisine });
 
     // Si se solicita refresh explícitamente o después de operaciones recientes
     if (refresh === 'true') {
@@ -544,7 +552,28 @@ app.get(['/search/recipes', '/search'], async (req, res) => {
 
     const cuisineTerm = Array.isArray(cuisine) ? cuisine[0] : cuisine;
     if (cuisineTerm) {
-      filter.push({ term: { 'cuisine.keyword': cuisineTerm } });
+      // cuisine is mapped as keyword type, use term query for exact matching
+      // term query is case-sensitive, so we need exact match
+      const trimmedCuisine = cuisineTerm.trim();
+      console.log('🔍 Filtering by cuisine:', trimmedCuisine);
+      filter.push({ 
+        term: { 
+          cuisine: trimmedCuisine
+        } 
+      });
+    }
+
+    const courseTerm = Array.isArray(course) ? course[0] : course;
+    if (courseTerm) {
+      // course is mapped as keyword type, use term query for exact matching
+      // term query is case-sensitive, so we need exact match
+      const trimmedCourse = courseTerm.trim();
+      console.log('🔍 Filtering by course:', trimmedCourse);
+      filter.push({ 
+        term: { 
+          course: trimmedCourse
+        } 
+      });
     }
 
     const normalizedDifficulty = normalizeDifficulty(difficulty);
@@ -652,6 +681,35 @@ app.get(['/search/recipes', '/search'], async (req, res) => {
     }
 
     console.log('🔍 ES Query:', JSON.stringify(searchPayload, null, 2));
+    
+    // Debug: Get unique cuisine and course values to help troubleshoot
+    if (cuisineTerm || courseTerm) {
+      try {
+        const debugAggs = await es.search({
+          index: 'recipes',
+          size: 0,
+          aggs: {
+            unique_cuisines: {
+              terms: {
+                field: 'cuisine',
+                size: 50
+              }
+            },
+            unique_courses: {
+              terms: {
+                field: 'course',
+                size: 50
+              }
+            }
+          }
+        });
+        console.log('📊 Unique cuisines in index:', debugAggs.aggregations?.unique_cuisines?.buckets?.map(b => b.key));
+        console.log('📊 Unique courses in index:', debugAggs.aggregations?.unique_courses?.buckets?.map(b => b.key));
+      } catch (debugErr) {
+        console.warn('⚠️ Debug aggregation error:', debugErr.message);
+      }
+    }
+    
     const r = await es.search(searchPayload);
 
     res.json({
